@@ -179,8 +179,10 @@ POST   /api/students           # Create new student (triggers events)
 
 ```http
 GET    /api/cards              # List all cards (uses read model)
+GET    /api/cards/{id}         # Get card by ID (uses read model)
 POST   /api/cards              # Create new card (triggers events)
 POST   /api/cards/{id}/assign  # Assign card to student (triggers events)
+POST   /api/cards/{id}/unassign  # Unassign card from student (triggers events)
 ```
 
 ### API Flow Diagrams
